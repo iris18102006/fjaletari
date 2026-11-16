@@ -1,0 +1,2 @@
+/* Fjalëtari: Format */
+input,textarea{font:inherit;width:100%;padding:12px 14px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);transition:border-color .15s}
