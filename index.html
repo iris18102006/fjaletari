@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Fjalëtari</title>
+<title>Fjalë për Fjalë</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -18,6 +18,7 @@
 
 </head>
 <body>
+<!-- Ikonat: Lucide (ISC) dhe Feather (MIT). Shih NOTICE.md -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
 <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-17.07 1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
@@ -34,7 +35,7 @@
 </svg>
 <div class="wrap">
 <header>
-  <div class="brand"><span class="logo"><svg class="i"><use href="#i-book"/></svg></span>Fjalëtari</div>
+  <div class="brand"><span class="mark" aria-hidden="true">ë</span>Fjalë për Fjalë</div>
   <button class="btn ghost icon-btn" id="snd" aria-label="Zëri"></button>
   <button class="btn ghost icon-btn" id="thm" aria-label="Ndërro temën"></button>
 </header>
@@ -90,7 +91,6 @@
   <div class="card"><h2 id="wcount"></h2><div class="grid" id="wl"></div></div>
 </section>
 
-<p><small>Ikonat: Lucide dhe Feather, me licencë të hapur (ISC/MIT), falas. Zërat krijohen drejtpërdrejt në shfletues.</small></p>
 </div>
 <script src="js/util.js"></script>
 <script src="js/data.js"></script>
