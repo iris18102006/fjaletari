@@ -1,4 +1,4 @@
-# Fjalëtari
+# Fjalë për Fjalë
 
 Aplikacion web në shqip për të kontrolluar fjalë nga fjalori dhe për të krijuar kuize.
 
@@ -6,6 +6,7 @@ Aplikacion web në shqip për të kontrolluar fjalë nga fjalori dhe për të kr
 
 - Kontrollon nëse një fjalë është në fjalor dhe të jep kuptimin me një shembull në fjali
 - Të thotë "pothuajse" kur e harron ë-në ose ç-në, dhe sugjeron fjalë të ngjashme
+- Kur një fjalë nuk është në fjalorin e vogël, të çon te fjalorthi.com për ta kontrolluar
 - Kuiz automatik nga fjalori, me 8 pyetje të reja çdo herë
 - Krijon kuizet e tua, me 4 përgjigje dhe një të saktë
 - Shton fjalë të tua në fjalor
@@ -26,7 +27,7 @@ Hap `index.html` në shfletues. Nuk duhet instalim as server.
 
 ## Ikonat
 
-Lucide dhe Feather, me licencë të hapur (ISC/MIT).
+Lucide dhe Feather, me licencë të hapur (ISC/MIT). Shih `NOTICE.md`.
 
 ## Licenca
 
