@@ -8,3 +8,8 @@ header{display:flex;align-items:center;gap:10px;padding:6px 0 18px}
 .tab:hover{color:var(--ink)}.tab:active{transform:translateY(2px)}
 .tab[aria-selected=true]{color:var(--pri);border-color:var(--pri)}
 .row{display:flex;gap:10px;flex-wrap:wrap}.row>input{flex:1;min-width:180px}
+.view{display:none}.view.on{display:block;animation:fade .25s}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.opts-in{display:grid;grid-template-columns:1fr 1fr;gap:10px}.opts-in label{margin:0}
+.opts-in .ca{display:flex;align-items:center;gap:8px}.ca input[type=radio]{width:22px;height:22px;accent-color:var(--ok);flex:none}
+@media(max-width:560px){.opts-in{grid-template-columns:1fr}}
