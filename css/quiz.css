@@ -1,2 +1,5 @@
 /* Fjalëtari: Kuizi */
 .opts{display:grid;gap:10px;margin:16px 0}
+.opt{text-align:left;font:700 17px Nunito,sans-serif;color:var(--ink);background:var(--bg);border:2px solid var(--line);border-radius:12px;padding:13px 16px;cursor:pointer;box-shadow:0 3px 0 var(--line);transition:transform .08s,box-shadow .08s,border-color .15s}
+.opt:hover{border-color:var(--teal)}.opt:active{transform:translateY(3px);box-shadow:0 0 0 var(--line)}
+.opt.good{background:var(--ok-bg);border-color:var(--ok);animation:pop .35s}.opt.bad{background:var(--bad-bg);border-color:var(--bad);animation:shake .35s}
