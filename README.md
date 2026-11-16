@@ -24,3 +24,10 @@ Hap `index.html` në shfletues. Nuk duhet instalim as server.
 - `js/words-*.js` fjalët fillestare të fjalorit
 - `docs/FJALORI.md` si shtohen fjalë të reja
 
+## Ikonat
+
+Lucide dhe Feather, me licencë të hapur (ISC/MIT).
+
+## Licenca
+
+MIT
