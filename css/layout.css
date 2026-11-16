@@ -3,3 +3,8 @@
 header{display:flex;align-items:center;gap:10px;padding:6px 0 18px}
 .brand{display:flex;align-items:center;gap:10px;font:800 28px Fraunces,Georgia,serif;margin-right:auto}
 .logo{width:44px;height:44px;border-radius:13px;background:var(--pri);color:var(--on);display:grid;place-items:center}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:22px;border-bottom:2px solid var(--line)}
+.tab{background:none;border:0;font:800 16px Nunito,sans-serif;color:var(--mute);padding:10px 14px;border-radius:10px 10px 0 0;cursor:pointer;border-bottom:4px solid transparent;margin-bottom:-2px;transition:color .15s,border-color .15s,transform .1s}
+.tab:hover{color:var(--ink)}.tab:active{transform:translateY(2px)}
+.tab[aria-selected=true]{color:var(--pri);border-color:var(--pri)}
+.row{display:flex;gap:10px;flex-wrap:wrap}.row>input{flex:1;min-width:180px}
