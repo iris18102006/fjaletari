@@ -1,0 +1,2 @@
+/* Fjalëtari: Kartat */
+.card{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:22px;margin-bottom:18px}
