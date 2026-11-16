@@ -1,0 +1,2 @@
+/* Fjalëtari: Butonat */
+.btn{display:inline-flex;align-items:center;gap:8px;font:800 16px Nunito,sans-serif;background:var(--pri);color:var(--on);border:0;border-radius:12px;padding:12px 20px;box-shadow:0 4px 0 var(--pri-d);cursor:pointer;transition:transform .08s,box-shadow .08s,filter .15s}
