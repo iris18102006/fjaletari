@@ -1,2 +1,4 @@
 /* Fjalëtari: Ngjyrat (light dhe dark) */
 :root{--bg:#FBF4E9;--card:#FFFFFF;--ink:#2D2926;--mute:#6F665E;--line:#E6D9C6;--pri:#C65A3A;--pri-d:#9E4128;--teal:#2B7A78;--teal-d:#1D5654;--ok:#3E8E5A;--ok-bg:#E3F2E7;--bad:#C0392B;--bad-bg:#FBE4E0;--on:#FFFFFF;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1D1A18;--card:#28231F;--ink:#F4EBDD;--mute:#B3A797;--line:#40372F;--pri:#E2775A;--pri-d:#B2533A;--teal:#5DB7B3;--teal-d:#3F8582;--ok:#6CC38A;--ok-bg:#1F3326;--bad:#EF7B6C;--bad-bg:#3A211D;--on:#1D1A18}}
+:root[data-theme="dark"]{--bg:#1D1A18;--card:#28231F;--ink:#F4EBDD;--mute:#B3A797;--line:#40372F;--pri:#E2775A;--pri-d:#B2533A;--teal:#5DB7B3;--teal-d:#3F8582;--ok:#6CC38A;--ok-bg:#1F3326;--bad:#EF7B6C;--bad-bg:#3A211D;--on:#1D1A18}
