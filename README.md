@@ -14,3 +14,13 @@ Aplikacion web në shqip për të kontrolluar fjalë nga fjalori dhe për të kr
 - Kuizet, fjalët dhe tema ruhen në shfletues (localStorage)
 
 ## Si ta hapësh
+
+Hap `index.html` në shfletues. Nuk duhet instalim as server.
+
+## Struktura
+
+- `css/` stilet, të ndara sipas pjesëve (ngjyra, layout, butona, forma, karta, kuiz, animacione)
+- `js/` kodi, ku çdo skedar ka një punë (zëri, tema, skedat, kontrolli, kuizi, krijimi, fjalori)
+- `js/words-*.js` fjalët fillestare të fjalorit
+- `docs/FJALORI.md` si shtohen fjalë të reja
+
