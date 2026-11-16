@@ -3,3 +3,6 @@
 .btn:hover{filter:brightness(1.07);transform:translateY(-1px);box-shadow:0 5px 0 var(--pri-d)}
 .btn:active{transform:translateY(4px);box-shadow:0 0 0 var(--pri-d)}
 .btn.teal{background:var(--teal);box-shadow:0 4px 0 var(--teal-d)}.btn.teal:hover{box-shadow:0 5px 0 var(--teal-d)}.btn.teal:active{box-shadow:0 0 0 var(--teal-d)}
+.btn.ghost{background:var(--card);color:var(--ink);border:2px solid var(--line);box-shadow:0 3px 0 var(--line)}.btn.ghost:hover{box-shadow:0 4px 0 var(--line)}.btn.ghost:active{box-shadow:0 0 0 var(--line)}
+.icon-btn{width:44px;height:44px;padding:0;justify-content:center}
+.btn:focus-visible,.tab:focus-visible,.opt:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
