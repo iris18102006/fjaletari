@@ -1,2 +1,2 @@
 // Nisja e aplikacionit
-paint();show('check');
+paint();FB?startAuth():setupView();

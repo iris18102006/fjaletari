@@ -1,0 +1,32 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{d}/documents {
+    function teacherOf(c) { return get(/databases/$(d)/documents/classes/$(c)).data.teacher == request.auth.uid; }
+    function isStudent() { return request.auth.token.email.matches('.*@nxenes[.]fjaletari[.]app'); }
+    function member(c) { return exists(/databases/$(d)/documents/classes/$(c)/members/$(request.auth.uid)); }
+
+    match /teachers/{u} {
+      allow read, write: if request.auth != null && request.auth.uid == u && !isStudent();
+    }
+    match /classes/{c} {
+      allow get: if request.auth != null;
+      allow list: if request.auth != null && resource.data.teacher == request.auth.uid;
+      allow create: if request.auth != null && !isStudent() && request.resource.data.teacher == request.auth.uid;
+      allow update, delete: if request.auth != null && resource.data.teacher == request.auth.uid;
+
+      match /members/{u} {
+        allow create: if request.auth.uid == u && isStudent() && exists(/databases/$(d)/documents/classes/$(c));
+        allow read: if request.auth != null && (request.auth.uid == u || teacherOf(c));
+        allow delete: if request.auth != null && teacherOf(c);
+      }
+      match /quizzes/{q} {
+        allow read: if request.auth != null && (teacherOf(c) || member(c));
+        allow write: if request.auth != null && teacherOf(c);
+      }
+      match /results/{r} {
+        allow create: if request.auth != null && request.resource.data.studentId == request.auth.uid && member(c);
+        allow read: if request.auth != null && (teacherOf(c) || resource.data.studentId == request.auth.uid);
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-/* Fjalë për Fjalë: Stilet bazë */
+/* Fjalëtari: Stilet bazë */
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:500 17px/1.55 Nunito,system-ui,sans-serif;transition:background .25s,color .25s}

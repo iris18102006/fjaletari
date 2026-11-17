@@ -1,8 +1,12 @@
-# Fjalë për Fjalë
+# Fjalëtari
 
-Aplikacion web në shqip për të kontrolluar fjalë nga fjalori dhe për të krijuar kuize.
+Aplikacion web në shqip për klasat: mësuesi krijon klasë dhe kuize, nxënësit hyjnë me emër, mbiemër dhe fjalëkalim, dhe mësuesi sheh rezultatet.
 
 ## Çfarë bën
+
+- Dy faqe hyrjeje: një për mësuesit, një për nxënësit
+- Mësuesi krijon klasë dhe merr një kod dhe një link për t’u bashkuar
+- Mësuesi sheh sa nxënës ka, krijon kuize dhe për secilin sheh emrin, pikët dhe ku ka gabuar nxënësi
 
 - Kontrollon nëse një fjalë është në fjalor dhe të jep kuptimin me një shembull në fjali
 - Të thotë "pothuajse" kur e harron ë-në ose ç-në, dhe sugjeron fjalë të ngjashme
@@ -12,11 +16,11 @@ Aplikacion web në shqip për të kontrolluar fjalë nga fjalori dhe për të kr
 - Shton fjalë të tua në fjalor
 - Tinguj të ndryshëm për përgjigje të sakta dhe të gabuara (Web Audio, pa skedarë zanore)
 - Light dhe dark mode
-- Kuizet, fjalët dhe tema ruhen në shfletues (localStorage)
+- Klasat, kuizet dhe rezultatet ruhen në Firebase; fjalët e shtuara dhe tema ruhen në shfletues
 
-## Si ta hapësh
+## Si ta nisësh
 
-Hap `index.html` në shfletues. Nuk duhet instalim as server.
+Shih `docs/FIREBASE.md`. Duhet një projekt Firebase falas dhe `js/config.js`.
 
 ## Struktura
 
